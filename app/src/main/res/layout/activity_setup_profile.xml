@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    tools:context=".SetupProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_round_account_circle_24"
+        android:background="@drawable/circle_lay"
+        android:contentDescription="profilepic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile Information"
+        android:gravity="center"
+        android:textColor="#4A4646"
+        android:fontFamily="@font/avenirnext_lt"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set your name and an optional profile image"
+        android:gravity="center"
+        android:textColor="#4A4646"
+        android:fontFamily="@font/avenirnext_regular"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/back"
+                android:ems="1"
+                android:fontFamily="@font/avenirnext_regular"
+                android:hint="Enter your name"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Setup Profile"
+                android:id="@+id/ctnbtn2"
+                android:textSize="17sp"
+                android:minHeight="48dp"
+                android:fontFamily="@font/avenirnext_bold"
+                android:backgroundTint="#FD9685"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/setproimg" />
+
+</LinearLayout>
